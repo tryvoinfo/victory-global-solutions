@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import logoImg from './assets/logo.png';
 import { 
   Building2, HardHat, UtensilsCrossed, Zap, ShieldCheck, 
   Phone, Mail, MapPin, CheckCircle2, ArrowRight, Menu, X, 
@@ -22,14 +23,8 @@ export default function App() {
       <header className="sticky top-0 z-50 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="container-site flex items-center justify-between h-20">
           <a href="#" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-navy flex items-center justify-center text-gold font-bold text-xl shadow-md">
-              VG
-            </div>
-            <div>
-              <span className="font-display font-bold text-lg tracking-tight text-navy block leading-none">VICTORY GLOBAL</span>
-              <span className="text-[10px] tracking-widest text-muted-foreground uppercase font-semibold">Solutions LTD</span>
-            </div>
-          </a>
+            <img src={logoImg} alt="Victory Global Solutions LTD Logo" className="h-10 w-auto object-contain" />
+            </a>
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8 font-medium text-sm">
@@ -83,7 +78,7 @@ export default function App() {
         
         <div className="container-site relative z-10 max-w-5xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-semibold uppercase tracking-widest">
-            <ShieldCheck className="w-4 h-4" /> Fully Registered RDB Company (TIN: 156267824)[cite: 6]
+            <ShieldCheck className="w-4 h-4" /> Fully Registered RDB Company (TIN: 156267824)
           </div>
           
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight">
@@ -145,7 +140,7 @@ export default function App() {
                 </div>
                 <h3 className="font-display font-bold text-xl">Manpower Supply</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Supply of skilled and general workers, labourers, and short/long-term staffing support with robust attendance coordination[cite: 3].
+                  Supply of skilled and general workers, labourers, and short/long-term staffing support with robust attendance coordination.
                 </p>
               </div>
               <ul className="space-y-2 pt-6 text-xs text-muted-foreground border-t border-border mt-6">
@@ -163,13 +158,13 @@ export default function App() {
                 </div>
                 <h3 className="font-display font-bold text-xl">General Construction</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Construction of non-residential buildings, civil engineering works, water mains, reservoirs, and site clearing services[cite: 7].
+                  Construction of non-residential buildings, civil engineering works, water mains, reservoirs, and site clearing services.
                 </p>
               </div>
               <ul className="space-y-2 pt-6 text-xs text-muted-foreground border-t border-border mt-6">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Commercial & industrial builds[cite: 7]</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Civil engineering projects[cite: 7]</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Site preparation & clearing[cite: 7]</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Commercial & industrial builds</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Civil engineering projects</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Site preparation & clearing</li>
               </ul>
             </div>
 
@@ -181,13 +176,13 @@ export default function App() {
                 </div>
                 <h3 className="font-display font-bold text-xl">Specialized Installations</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Electrical wiring, lighting systems, HVAC, plumbing, fibre optics, fire alarms, and security network installations[cite: 7].
+                  Electrical wiring, lighting systems, HVAC, plumbing, fibre optics, fire alarms, and security network installations.
                 </p>
               </div>
               <ul className="space-y-2 pt-6 text-xs text-muted-foreground border-t border-border mt-6">
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Electrical & solar systems[cite: 7]</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Fibre optic & IT cabling[cite: 7]</li>
-                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Plumbing & HVAC ducting[cite: 7]</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Electrical & solar systems</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Fibre optic & IT cabling</li>
+                <li className="flex items-center gap-2"><CheckCircle2 className="w-3.5 h-3.5 text-gold" /> Plumbing & HVAC ducting</li>
               </ul>
             </div>
 
@@ -226,11 +221,11 @@ export default function App() {
 
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
             {[
-              { step: "01", title: "Understand", desc: "Discuss client workforce needs, project scope, and timelines[cite: 5]." },
-              { step: "02", title: "Agree", desc: "Confirm responsibilities, worker count, safety terms, and pricing[cite: 4, 5]." },
-              { step: "03", title: "Coordinate", desc: "Swift deployment of verified workforce and technical supervision[cite: 5]." },
-              { step: "04", title: "Maintain", desc: "Continuous progress tracking, open dialogue, and quality assurance[cite: 5]." },
-              { step: "05", title: "Review", desc: "Gather feedback and optimize performance for future assignments[cite: 5]." }
+              { step: "01", title: "Understand", desc: "Discuss client workforce needs, project scope, and timelines." },
+              { step: "02", title: "Agree", desc: "Confirm responsibilities, worker count, safety terms, and pricing" },
+              { step: "03", title: "Coordinate", desc: "Swift deployment of verified workforce and technical supervision" },
+              { step: "04", title: "Maintain", desc: "Continuous progress tracking, open dialogue, and quality assurance" },
+              { step: "05", title: "Review", desc: "Gather feedback and optimize performance for future assignments" }
             ].map((item, idx) => (
               <div key={idx} className="bg-card p-6 rounded-xl border border-border space-y-4 relative shadow-sm">
                 <span className="text-4xl font-extrabold text-gold/30 block font-display">{item.step}</span>
@@ -251,16 +246,16 @@ export default function App() {
               Built on Integrity, Driven by Excellence
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              **Victory Global Solutions LTD** is a fully registered private company limited by shares under the Rwanda Development Board (RDB)[cite: 6]. Led by Managing Director Adelphine Mujawimana[cite: 6], we combine rigorous technical capabilities with dependable workforce management.
+              Victory Global Solutions LTD is a fully registered private company limited by shares under the Rwanda Development Board (RDB). We combine rigorous technical capabilities with dependable workforce management.
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="p-4 rounded-xl bg-secondary border border-border">
                 <div className="font-bold text-navy text-lg">TIN: 156267824</div>
-                <div className="text-xs text-muted-foreground">Registered Taxpayer ID[cite: 6]</div>
+                <div className="text-xs text-muted-foreground">Registered Taxpayer ID</div>
               </div>
               <div className="p-4 rounded-xl bg-secondary border border-border">
                 <div className="font-bold text-navy text-lg">Kigali, Rwanda</div>
-                <div className="text-xs text-muted-foreground">Headquarters Office[cite: 6]</div>
+                <div className="text-xs text-muted-foreground">Headquarters Office</div>
               </div>
             </div>
           </div>
@@ -274,8 +269,8 @@ export default function App() {
               We maintain full adherence to Rwandan labor and business laws, ensuring tax compliance, social contributions, EBM billing integration, and strict workplace safety protocols for all deployed personnel.
             </p>
             <ul className="space-y-3 text-sm font-medium">
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-gold shrink-0" /> Registered via RDB One Stop Centre[cite: 8]</li>
-              <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-gold shrink-0" /> Mandatory EBM & Tax Compliance[cite: 8]</li>
+              <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-gold shrink-0" /> Registered via RDB One Stop Centre</li>
+              <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-gold shrink-0" /> Mandatory EBM & Tax Compliance</li>
               <li className="flex items-center gap-3"><CheckCircle2 className="w-5 h-5 text-gold shrink-0" /> Strict Occupational Health & Safety Rules</li>
             </ul>
           </div>
@@ -300,7 +295,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Call Us Directly</div>
-                  <a href="tel:0786253639" className="font-bold text-foreground hover:text-primary">0786 253 639[cite: 6]</a>
+                  <a href="tel:0786253639" className="font-bold text-foreground hover:text-primary">0786 253 639</a>
                 </div>
               </div>
 
@@ -310,7 +305,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Email Address</div>
-                  <a href="mailto:victorysolution19@gmail.com" className="font-bold text-foreground hover:text-primary">victorysolution19@gmail.com[cite: 6]</a>
+                  <a href="mailto:info@victoryglobalsolutions.net" className="font-bold text-foreground hover:text-primary">info@victoryglobalsolutions.net</a>
                 </div>
               </div>
 
@@ -320,101 +315,52 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Office Location</div>
-                  <div className="font-bold text-foreground">Nyarurembo, Kiyovu, Nyarugenge, Kigali, Rwanda[cite: 6]</div>
+                  <div className="font-bold text-foreground">Nyarurembo, Kiyovu, Nyarugenge, Kigali, Rwanda</div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="bg-card p-8 lg:p-10 rounded-2xl shadow-card border border-border">
-            {formSubmitted ? (
-              <div className="text-center py-16 space-y-4">
-                <div className="w-16 h-16 rounded-full bg-emerald-500/10 text-emerald-600 flex items-center justify-center mx-auto">
-                  <CheckCircle2 className="w-8 h-8" />
-                </div>
-                <h3 className="font-display font-bold text-2xl">Message Received!</h3>
-                <p className="text-muted-foreground text-sm max-w-sm mx-auto">
-                  Thank you for reaching out. Our management team will review your requirements and get back to you shortly.
-                </p>
-                <button 
-                  onClick={() => setFormSubmitted(false)} 
-                  className="btn-navy text-sm mt-4"
-                >
-                  Send Another Inquiry
-                </button>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <h3 className="font-display font-bold text-xl mb-6">Request a Service Quote</h3>
-                
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold">Full Name</label>
-                  <input 
-                    type="text" 
-                    required 
-                    placeholder="John Doe"
-                    value={formData.name}
-                    onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full h-11 px-4 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:border-gold"
-                  />
-                </div>
+          <div className="bg-card p-8 lg:p-10 rounded-2xl shadow-card border border-border flex flex-col justify-center space-y-8">
+            <div className="space-y-2">
+              <span className="eyebrow">Direct Enquiries</span>
+              <h3 className="font-display font-bold text-2xl">Connect With Our Team</h3>
+              <p className="text-muted-foreground text-sm">
+                For immediate assistance, recruitment needs, or project consultations, please reach out directly via phone or email.
+              </p>
+            </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="space-y-1">
-                    <label className="text-xs font-semibold">Email Address</label>
-                    <input 
-                      type="email" 
-                      required 
-                      placeholder="john@company.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full h-11 px-4 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:border-gold"
-                    />
-                  </div>
-                  <div className="space-y-1">
-                    <label className="text-xs font-semibold">Phone Number</label>
-                    <input 
-                      type="tel" 
-                      required 
-                      placeholder="+250 780 000 000"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      className="w-full h-11 px-4 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:border-gold"
-                    />
-                  </div>
+            <div className="space-y-6">
+              <a 
+                href="tel:0786253639" 
+                className="flex items-center gap-4 p-5 rounded-xl bg-secondary/50 border border-border hover:border-gold transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-gold-foreground transition-all">
+                  <Phone className="w-6 h-6" />
                 </div>
-
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold">Service Required</label>
-                  <select 
-                    value={formData.service}
-                    onChange={(e) => setFormData({...formData, service: e.target.value})}
-                    className="w-full h-11 px-4 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:border-gold"
-                  >
-                    <option value="Manpower Supply">Manpower Supply (Skilled & General)</option>
-                    <option value="General Construction">General Construction & Building</option>
-                    <option value="Specialized Installations">Specialized Electrical & Mechanical Installations</option>
-                    <option value="Hospitality Services">Hospitality Services Manpower</option>
-                  </select>
+                <div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Call Us Now</div>
+                  <div className="font-bold text-lg text-foreground">0786 253 639</div>
                 </div>
+              </a>
 
-                <div className="space-y-1">
-                  <label className="text-xs font-semibold">Project Details / Message</label>
-                  <textarea 
-                    rows="4" 
-                    required
-                    placeholder="Tell us about your workforce or construction requirements..."
-                    value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
-                    className="w-full p-4 rounded-lg bg-secondary border border-border text-sm focus:outline-none focus:border-gold"
-                  ></textarea>
+              <a 
+                href="mailto:info@victoryglobalsolutions.net" 
+                className="flex items-center gap-4 p-5 rounded-xl bg-secondary/50 border border-border hover:border-gold transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-gold-foreground transition-all">
+                  <Mail className="w-6 h-6" />
                 </div>
+                <div>
+                  <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Email Us</div>
+                  <div className="font-bold text-base text-foreground break-all">info@victoryglobalsolutions.net</div>
+                </div>
+              </a>
+            </div>
 
-                <button type="submit" className="btn-gold w-full mt-4">
-                  Submit Request
-                </button>
-              </form>
-            )}
+            <div className="pt-4 border-t border-border text-xs text-muted-foreground text-center">
+              Available for manpower supply, general construction, and hospitality staffing inquiries.
+            </div>
           </div>
 
         </div>
@@ -424,16 +370,13 @@ export default function App() {
       <footer className="bg-navy text-navy-foreground py-12 border-t border-navy-muted/20">
         <div className="container-site flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gold text-navy font-bold flex items-center justify-center">
-              VG
-            </div>
-            <div>
-              <span className="font-display font-bold text-base tracking-tight block leading-none">VICTORY GLOBAL SOLUTIONS LTD</span>
-              <span className="text-[10px] text-navy-muted tracking-widest uppercase">TIN: 156267824 | Kigali, Rwanda[cite: 6]</span>
-            </div>
+  <img src={logoImg} alt="Victory Global Solutions LTD Logo" className="h-10 w-auto object-contain" />
+  <div>
+    <span className="text-[10px] text-navy-muted tracking-widest uppercase block">TIN: 156267824 | Kigali, Rwanda</span>
+  </div>
           </div>
           <p className="text-xs text-navy-muted">
-            &copy; {new Date().getFullYear()} Victory Global Solutions LTD. All rights reserved. Reliable Workforce. Quality Work. Strong Partnerships[cite: 5].
+            &copy; {new Date().getFullYear()} Victory Global Solutions LTD. All rights reserved. Reliable Workforce. Quality Work. Strong Partnerships.
           </p>
         </div>
       </footer>
