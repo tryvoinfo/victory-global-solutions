@@ -72,7 +72,7 @@ export default function App() {
         
         <div className="container-site relative z-10 max-w-5xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold/15 border border-gold/30 text-gold text-xs font-semibold uppercase tracking-widest">
-            <ShieldCheck className="w-4 h-4" /> Fully Registered RDB Company (TIN: 156267824)
+            <ShieldCheck className="w-4 h-4" /> Fully Registered RDB Company
           </div>
           
           <h1 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight">
@@ -244,7 +244,7 @@ export default function App() {
             </p>
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="p-4 rounded-xl bg-secondary border border-border">
-                <div className="font-bold text-navy text-lg">TIN: 156267824</div>
+                <div className="font-bold text-navy text-lg"></div>
                 <div className="text-xs text-muted-foreground">Registered Taxpayer ID</div>
               </div>
               <div className="p-4 rounded-xl bg-secondary border border-border">
@@ -366,7 +366,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <img src={logoImg} alt="Victory Global Solutions LTD Logo" className="h-10 w-auto object-contain" />
             <div>
-              <span className="text-[10px] text-navy-muted tracking-widest uppercase block">TIN: 156267824 | Kigali, Rwanda</span>
+              <span className="text-[10px] text-navy-muted tracking-widest uppercase block">| Kigali, Rwanda</span>
             </div>
           </div>
           <p className="text-xs text-navy-muted">
