@@ -30,9 +30,9 @@ export default function App() {
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
-            <a href="tel:0786253639" className="flex items-center gap-2 text-xs font-semibold text-navy bg-secondary px-3 py-2 rounded-lg">
+            <a href="tel:+250781990212" className="flex items-center gap-2 text-xs font-semibold text-navy bg-secondary px-3 py-2 rounded-lg">
               <Phone className="w-4 h-4 text-gold" />
-              <span>0786 253 639</span>
+              <span>+250781990212</span>
             </a>
             <a href="#contact" className="btn-gold text-sm h-10 px-4">Request Manpower</a>
           </div>
@@ -56,8 +56,8 @@ export default function App() {
             <a href="#compliance" onClick={() => setMobileMenuOpen(false)} className="block font-medium text-base">Compliance</a>
             <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="block font-medium text-base">Contact</a>
             <div className="pt-4 border-t border-border flex flex-col gap-3">
-              <a href="tel:0786253639" className="flex items-center gap-2 text-sm font-semibold text-navy">
-                <Phone className="w-4 h-4 text-gold" /> 0786 253 639
+              <a href="tel:+250781990212" className="flex items-center gap-2 text-sm font-semibold text-navy">
+                <Phone className="w-4 h-4 text-gold" /> +250781990212
               </a>
               <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="btn-gold w-full text-center">Request Manpower</a>
             </div>
@@ -289,7 +289,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground">Call Us Directly</div>
-                  <a href="tel:0786253639" className="font-bold text-foreground hover:text-primary">0786 253 639</a>
+                  <a href="tel:+250781990212" className="font-bold text-foreground hover:text-primary">+250781990212</a>
                 </div>
               </div>
 
@@ -326,7 +326,7 @@ export default function App() {
 
             <div className="space-y-6">
               <a 
-                href="tel:0786253639" 
+                href="tel:+250781990212" 
                 className="flex items-center gap-4 p-5 rounded-xl bg-secondary/50 border border-border hover:border-gold transition-all group"
               >
                 <div className="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center group-hover:bg-gold group-hover:text-gold-foreground transition-all">
@@ -334,7 +334,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="text-xs text-muted-foreground uppercase tracking-wider font-semibold">Call Us Now</div>
-                  <div className="font-bold text-lg text-foreground">0786 253 639</div>
+                  <div className="font-bold text-lg text-foreground">+250781990212</div>
                 </div>
               </a>
 
